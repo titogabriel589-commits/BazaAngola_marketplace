@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12372a">
+<title>BAZA ANGOLA — Compra e Venda em Angola</title>
+<style>
+:root{--green:#12372a;--green2:#1d5a43;--lime:#f6c445;--bg:#f5f7f4;--card:#fff;--ink:#17231d;--muted:#64736a;--line:#e1e8e2;--red:#a92f2f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:11px 14px;font-weight:700}.primary{background:var(--green);color:#fff}.secondary{background:#edf3ed;color:var(--green)}.danger{background:#fff0ef;color:var(--red)}header{background:var(--green);color:#fff;padding:20px 16px 18px} .head{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px}.logo{width:42px;height:42px;background:linear-gradient(135deg,#d9272e 0 33%,#f6c445 33% 66%,#202020 66%);color:#fff;border-radius:13px;display:grid;place-items:center;font-weight:950;font-size:16px;text-shadow:0 1px 3px #000}.brand h1{font-size:20px;margin:0;letter-spacing:.3px}.brand p{margin:2px 0 0;color:#d2e2d6;font-size:12px}.pill{border:1px solid #577567;padding:7px 10px;border-radius:999px;font-size:12px;color:#eaf4ed;white-space:nowrap}.hero{max-width:1050px;margin:0 auto;padding:24px 16px 18px;color:white}.hero h2{font-size:clamp(24px,5vw,36px);line-height:1.12;margin:0 0 10px;max-width:650px}.hero p{margin:0;color:#d5e4d9;max-width:600px;line-height:1.5}.commission{display:inline-flex;align-items:center;gap:8px;background:#234c3c;padding:9px 12px;border-radius:12px;margin-top:16px;font-size:13px}.commission strong{color:var(--lime);font-size:18px}main{max-width:1050px;margin:auto;padding:18px 14px 45px}.tabs{display:flex;gap:8px;overflow:auto;padding-bottom:12px}.tab{background:#e8eee8;color:#415148;white-space:nowrap}.tab.active{background:var(--green);color:white}.panel{display:none}.panel.active{display:block}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:8px 0 16px}.toolbar input{flex:1;min-width:150px}.field{width:100%;padding:12px;border:1px solid #d6e0d7;border-radius:11px;background:white;color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.product img{width:100%;height:140px;object-fit:cover;background:#e8eee8}.placeholder{height:140px;background:linear-gradient(135deg,#e7eee6,#d2e1d2);display:grid;place-items:center;font-size:38px}.product-body{padding:12px;display:flex;flex-direction:column;gap:7px;flex:1}.category{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}.product h3{font-size:15px;line-height:1.3;margin:0;overflow-wrap:anywhere}.price{font-size:18px;font-weight:850;color:var(--green)}.meta{font-size:12px;color:var(--muted)}.product-actions{display:flex;gap:7px;margin-top:auto;padding-top:5px}.product-actions button{flex:1;padding:9px 6px;font-size:12px}.section-title{font-size:20px;margin:5px 0}.sub{color:var(--muted);font-size:13px;margin:0 0 16px;line-height:1.45}.form-card,.stat,.table-wrap,.notice{background:white;border:1px solid var(--line);border-radius:16px;padding:15px;margin-bottom:14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}label{font-size:12px;font-weight:750;display:block;margin-bottom:6px}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}.stat small{color:var(--muted);display:block;font-size:12px}.stat strong{display:block;font-size:22px;margin-top:5px;color:var(--green);overflow-wrap:anywhere}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:11px;text-transform:uppercase;color:var(--muted)}.badge{display:inline-block;padding:5px 8px;border-radius:99px;font-size:11px;font-weight:750;background:#edf3ed;color:#31513d}.badge.pending{background:#fff4d9;color:#815800}.badge.paid{background:#e0f5e6;color:#1b6a36}.empty{background:#fff;border:1px dashed #cbd8cd;border-radius:14px;padding:25px 16px;text-align:center;color:var(--muted);grid-column:1/-1}.empty strong{display:block;color:var(--ink);margin-bottom:5px}.notice{font-size:13px;line-height:1.5;color:#4e5d53;background:#f0f5ef}.notice strong{color:var(--green)}.inline-actions{display:flex;gap:6px;flex-wrap:wrap}.small{font-size:12px;padding:8px 10px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:15px 0 0}.hidden{display:none!important}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.product img,.placeholder{height:175px}.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{padding-top:32px;padding-bottom:28px}}
+@media(max-width:440px){.pill{display:none}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.product-actions{flex-direction:column}.product-actions button{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <div class="brand"><div class="logo">BA</div><div><h1>BAZA ANGOLA</h1><p>O mercado de todos os angolanos</p></div></div>
+    <div class="pill">Marketplace • Angola</div>
+  </div>
+  <div class="hero">
+    <h2>Compra e vende com mais facilidade.</h2>
+    <p>Descobre produtos, anuncia o que vendes e contacta vendedores. A BAZA ANGOLA cobra uma comissão de 5% por cada venda concluída.</p>
+    <div class="commission"><strong>5%</strong><span>de comissão por venda concluída</span></div>
+  </div>
+</header>
+<main>
+  <nav class="tabs" aria-label="Navegação principal">
+    <button class="tab active" data-tab="catalog">Produtos</button>
+    <button class="tab" data-tab="sell">Anunciar produto</button>
+    <button class="tab" data-tab="sales">Registo de vendas</button>
+    <button class="tab" data-tab="admin">Administração</button>
+  </nav>
+
+  <section class="panel active" id="catalog">
+    <h2 class="section-title">Produtos disponíveis</h2>
+    <p class="sub">Pesquisa anúncios e fala diretamente com o vendedor. Os anúncios novos precisam de aprovação.</p>
+    <div class="toolbar">
+      <input class="field" id="search" placeholder="Pesquisar produtos..." aria-label="Pesquisar produtos">
+      <select class="field" id="filterCategory" style="max-width:190px" aria-label="Filtrar categoria">
+        <option value="">Todas as categorias</option><option>Telemóveis</option><option>Moda</option><option>Casa</option><option>Eletrónica</option><option>Alimentação</option><option>Outros</option>
+      </select>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <section class="panel" id="sell">
+    <h2 class="section-title">Anunciar um produto</h2>
+    <p class="sub">Preenche os dados do produto. O anúncio fica pendente até ser aprovado pelo administrador.</p>
+    <form class="form-card" id="productForm">
+      <div class="form-grid">
+        <div class="full"><label for="pname">Nome do produto *</label><input class="field" id="pname" required maxlength="90" placeholder="Ex.: Ténis desportivos"></div>
+        <div><label for="pprice">Preço (Kz) *</label><input class="field" id="pprice" type="number" min="1" step="1" required placeholder="Ex.: 15000"></div>
+        <div><label for="pcategory">Categoria *</label><select class="field" id="pcategory" required><option value="">Escolher categoria</option><option>Telemóveis</option><option>Moda</option><option>Casa</option><option>Eletrónica</option><option>Alimentação</option><option>Outros</option></select></div>
+        <div><label for="pseller">Nome do vendedor *</label><input class="field" id="pseller" required maxlength="70" placeholder="O teu nome ou loja"></div>
+        <div><label for="pwhatsapp">WhatsApp do vendedor *</label><input class="field" id="pwhatsapp" required inputmode="tel" maxlength="25" placeholder="Ex.: 2449XXXXXXXX"></div>
+        <div class="full"><label for="plocation">Localização *</label><input class="field" id="plocation" required maxlength="90" placeholder="Ex.: Kuito, Bié"></div>
+        <div class="full"><label for="pdesc">Descrição</label><textarea class="field" id="pdesc" rows="3" maxlength="500" placeholder="Estado, tamanho, entrega e outros detalhes"></textarea></div>
+        <div class="full"><label for="pimage">Link de uma fotografia (opcional)</label><input class="field" id="pimage" type="url" placeholder="https://..."></div>
+        <div class="full"><button class="primary" type="submit" style="width:100%">Enviar anúncio para aprovação</button></div>
+      </div>
+    </form>
+    <div class="notice"><strong>Regra para vendedores:</strong> a comissão é de 5% do valor de cada venda concluída. Por exemplo, numa venda de 10.000 Kz, a comissão é 500 Kz. Confirma a venda no registo e paga a comissão conforme o método acordado com a administração.</div>
+  </section>
+
+  <section class="panel" id="sales">
+    <h2 class="section-title">Registo de vendas</h2>
+    <p class="sub">Regista vendas concluídas para calcular a comissão devida. Marca a comissão como paga apenas depois de confirmares o recebimento.</p>
+    <div class="stats">
+      <div class="stat"><small>Vendas concluídas</small><strong id="salesCount">0</strong></div>
+      <div class="stat"><small>Valor vendido</small><strong id="salesValue">0 Kz</strong></div>
+      <div class="stat"><small>Comissão total (5%)</small><strong id="commissionTotal">0 Kz</strong></div>
+      <div class="stat"><small>Comissão por receber</small><strong id="commissionDue">0 Kz</strong></div>
+    </div>
+    <form class="form-card" id="saleForm">
+      <h3 style="margin:0 0 12px">Registar venda concluída</h3>
+      <div class="form-grid">
+        <div class="full"><label for="saleProduct">Produto *</label><select class="field" id="saleProduct" required><option value="">Escolher produto aprovado</option></select></div>
+        <div><label for="saleAmount">Preço final da venda (Kz) *</label><input class="field" id="saleAmount" type="number" min="1" step="1" required placeholder="Ex.: 10000"></div>
+        <div><label for="saleSeller">Vendedor *</label><input class="field" id="saleSeller" required maxlength="70" placeholder="Nome do vendedor"></div>
+        <div class="full"><label for="saleNote">Referência ou observação</label><input class="field" id="saleNote" maxlength="140" placeholder="Ex.: Venda confirmada por WhatsApp"></div>
+        <div class="full"><button class="primary" type="submit" style="width:100%">Registar venda e calcular 5%</button></div>
+      </div>
+    </form>
+    <div class="table-wrap"><table><thead><tr><th>Data</th><th>Produto / vendedor</th><th>Valor</th><th>Comissão 5%</th><th>Estado</th><th>Ação</th></tr></thead><tbody id="salesTable"></tbody></table><div id="salesEmpty" class="empty"><strong>Ainda não há vendas registadas</strong>As vendas que registares aparecerão aqui.</div></div>
+  </section>
+
+  <section class="panel" id="admin">
+    <h2 class="section-title">Painel de administração</h2>
+    <p class="sub">Ferramentas locais de demonstração para rever anúncios e acompanhar as comissões.</p>
+    <div class="notice"><strong>Importante:</strong> esta versão é um protótipo guardado apenas neste navegador. Ainda não tem contas seguras, base de dados partilhada, cobrança automática nem verificação de pagamento. Não uses estes registos como prova financeira oficial.</div>
+    <div class="stats">
+      <div class="stat"><small>Anúncios pendentes</small><strong id="pendingCount">0</strong></div>
+      <div class="stat"><small>Anúncios aprovados</small><strong id="approvedCount">0</strong></div>
+      <div class="stat"><small>Vendas registadas</small><strong id="adminSalesCount">0</strong></div>
+      <div class="stat"><small>Comissões por receber</small><strong id="adminDue">0 Kz</strong></div>
+    </div>
+    <h3>Rever anúncios</h3>
+    <div class="table-wrap"><table><thead><tr><th>Produto</th><th>Vendedor</th><th>Preço</th><th>Estado</th><th>Ações</th></tr></thead><tbody id="adminProducts"></tbody></table><div id="adminEmpty" class="empty"><strong>Não há anúncios</strong>Os novos anúncios aparecerão aqui.</div></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+      <button class="secondary" id="exportBtn">Exportar registos CSV</button>
+      <button class="danger" id="resetBtn">Apagar dados deste navegador</button>
+    </div>
+  </section>
+  <div class="footer">BAZA ANGOLA • Protótipo inicial • Comissão configurada: 5%</div>
+</main>
+<script>
+(() => {
+ const KEY='baza_angola_marketplace_v1';
+ const fmt=n=>new Intl.NumberFormat('pt-PT',{maximumFractionDigits:0}).format(Number(n)||0)+' Kz';
+ const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const cleanPhone=s=>String(s||'').replace(/[^\d+]/g,'');
+ let state={products:[],sales:[]};
+ try{const saved=localStorage.getItem(KEY);if(saved)state=JSON.parse(saved)}catch(e){}
+ if(!state||!Array.isArray(state.products)||!Array.isArray(state.sales))state={products:[],sales:[]};
+ const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){alert('Não foi possível guardar os dados neste navegador.')}};
+ const el=id=>document.getElementById(id);
+ document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{
+   document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b===btn));
+   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===btn.dataset.tab));
+   render();
+ }));
+ const approved=()=>state.products.filter(p=>p.status==='approved');
+ function renderCatalog(){
+   const q=el('search').value.trim().toLowerCase(),cat=el('filterCategory').value;
+   const list=approved().filter(p=>(!cat||p.category===cat)&&[p.name,p.description,p.location,p.seller,p.category].join(' ').toLowerCase().includes(q));
+   el('productGrid').innerHTML=list.length?list.map(p=>`<article class="product">${p.image?`<img src="${safe(p.image)}" alt="${safe(p.name)}" loading="lazy" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>🛍️</div>'">`:`<div class="placeholder">🛍️</div>`}<div class="product-body"><div class="category">${safe(p.category)}</div><h3>${safe(p.name)}</h3><div class="price">${fmt(p.price)}</div><div class="meta">${safe(p.location)} • Vendedor: ${safe(p.seller)}</div>${p.description?`<div class="meta">${safe(p.description)}</div>`:''}<div class="product-actions"><button class="primary" data-contact="${safe(p.id)}">Contactar</button></div></div></article>`).join(''):`<div class="empty"><strong>${state.products.length?'Nenhum produto encontrado':'Ainda não há produtos publicados'}</strong>${state.products.length?'Experimenta mudar a pesquisa ou categoria.':'Sê o primeiro a anunciar um produto. Os anúncios precisam de aprovação.'}</div>`;
+   el('productGrid').querySelectorAll('[data-contact]').forEach(b=>b.addEventListener('click',()=>{
+     const p=state.products.find(x=>x.id===b.dataset.contact);if(!p)return;
+     const phone=cleanPhone(p.whatsapp);if(!phone){alert('Este vendedor ainda não tem um WhatsApp válido.');return}
+     const msg=encodeURIComponent(`Olá, vi o anúncio "${p.name}" na BAZA ANGOLA por ${fmt(p.price)}. Ainda está disponível?`);
+     window.open(`https://wa.me/${phone.replace(/^\+/,'')}?text=${msg}`,'_blank','noopener');
+   }));
+ }
+ function renderSaleSelect(){
+   const sel=el('saleProduct'),old=sel.value;
+   sel.innerHTML='<option value="">Escolher produto aprovado</option>'+approved().map(p=>`<option value="${safe(p.id)}">${safe(p.name)} — ${fmt(p.price)} (${safe(p.seller)})</option>`).join('');
+   if(approved().some(p=>p.id===old))sel.value=old;
+ }
+ function renderSales(){
+   const total=state.sales.reduce((a,s)=>a+Number(s.amount),0),comm=state.sales.reduce((a,s)=>a+Number(s.commission),0),due=state.sales.filter(s=>!s.paid).reduce((a,s)=>a+Number(s.commission),0);
+   el('salesCount').textContent=state.sales.length;el('salesValue').textContent=fmt(total);el('commissionTotal').textContent=fmt(comm);el('commissionDue').textContent=fmt(due);
+   el('adminSalesCount').textContent=state.sales.length;el('adminDue').textContent=fmt(due);
+   el('salesEmpty').classList.toggle('hidden',state.sales.length>0);
+   el('salesTable').innerHTML=state.sales.slice().reverse().map(s=>`<tr><td>${safe(s.date)}</td><td><strong>${safe(s.productName)}</strong><br><span class="meta">${safe(s.seller)}</span>${s.note?`<br><span class="meta">${safe(s.note)}</span>`:''}</td><td>${fmt(s.amount)}</td><td><strong>${fmt(s.commission)}</strong></td><td><span class="badge ${s.paid?'paid':'pending'}">${s.paid?'Paga':'Por receber'}</span></td><td>${s.paid?'—':`<button class="secondary small" data-paid="${safe(s.id)}">Marcar paga</button>`} <button class="danger small" data-delsale="${safe(s.id)}">Apagar</button></td></tr>`).join('');
+   el('salesTable').querySelectorAll('[data-paid]').forEach(b=>b.onclick=()=>{const s=state.sales.find(x=>x.id===b.dataset.paid);if(s&&confirm('Confirmas que a comissão foi realmente recebida?')){s.paid=true;save();render()}});
+   el('salesTable').querySelectorAll('[data-delsale]').forEach(b=>b.onclick=()=>{if(confirm('Apagar este registo de venda?')){state.sales=state.sales.filter(s=>s.id!==b.dataset.delsale);save();render()}});
+ }
+ function renderAdmin(){
+   const pend=state.products.filter(p=>p.status==='pending').length,ap=approved().length;
+   el('pendingCount').textContent=pend;el('approvedCount').textContent=ap;el('adminEmpty').classList.toggle('hidden',state.products.length>0);
+   el('adminProducts').innerHTML=state.products.slice().reverse().map(p=>`<tr><td><strong>${safe(p.name)}</strong><br><span class="meta">${safe(p.category)} • ${safe(p.location)}</span></td><td>${safe(p.seller)}<br><span class="meta">${safe(p.whatsapp)}</span></td><td>${fmt(p.price)}</td><td><span class="badge ${p.status==='pending'?'pending':''}">${p.status==='pending'?'Pendente':p.status==='approved'?'Aprovado':'Rejeitado'}</span></td><td><div class="inline-actions">${p.status!=='approved'?`<button class="primary small" data-approve="${safe(p.id)}">Aprovar</button>`:''}${p.status!=='rejected'?`<button class="secondary small" data-reject="${safe(p.id)}">Rejeitar</button>`:''}<button class="danger small" data-delprod="${safe(p.id)}">Apagar</button></div></td></tr>`).join('');
+   el('adminProducts').querySelectorAll('[data-approve]').forEach(b=>b.onclick=()=>{const p=state.products.find(x=>x.id===b.dataset.approve);if(p){p.status='approved';save();render()}});
+   el('adminProducts').querySelectorAll('[data-reject]').forEach(b=>b.onclick=()=>{const p=state.products.find(x=>x.id===b.dataset.reject);if(p){p.status='rejected';save();render()}});
+   el('adminProducts').querySelectorAll('[data-delprod]').forEach(b=>b.onclick=()=>{if(confirm('Apagar este anúncio?')){state.products=state.products.filter(p=>p.id!==b.dataset.delprod);save();render()}});
+ }
+ function render(){renderCatalog();renderSaleSelect();renderSales();renderAdmin()}
+ el('search').addEventListener('input',renderCatalog);el('filterCategory').addEventListener('change',renderCatalog);
+ el('productForm').addEventListener('submit',e=>{
+   e.preventDefault();const price=Number(el('pprice').value),phone=cleanPhone(el('pwhatsapp').value);
+   if(!Number.isFinite(price)||price<=0){alert('Indica um preço válido.');return}
+   if(phone.replace(/\D/g,'').length<9){alert('Confirma o número de WhatsApp do vendedor.');return}
+   const image=el('pimage').value.trim();if(image&&!/^https?:\/\//i.test(image)){alert('A fotografia deve ter um link que comece por http:// ou https://');return}
+   state.products.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random()),name:el('pname').value.trim(),price,category:el('pcategory').value,seller:el('pseller').value.trim(),whatsapp:phone,location:el('plocation').value.trim(),description:el('pdesc').value.trim(),image,status:'pending',created:new Date().toISOString()});
+   save();e.target.reset();render();alert('Anúncio enviado. Agora abre Administração para aprovar o anúncio.');document.querySelector('[data-tab="admin"]').click();
+ });
+ el('saleProduct').addEventListener('change',()=>{const p=state.products.find(x=>x.id===el('saleProduct').value);if(p){el('saleAmount').value=p.price;el('saleSeller').value=p.seller}});
+ el('saleForm').addEventListener('submit',e=>{
+   e.preventDefault();const p=state.products.find(x=>x.id===el('saleProduct').value),amount=Number(el('saleAmount').value);
+   if(!p||p.status!=='approved'){alert('Escolhe um produto aprovado.');return}
+   if(!Number.isFinite(amount)||amount<=0){alert('Indica o preço final válido.');return}
+   const commission=Math.round(amount*0.05);
+   state.sales.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random()),productId:p.id,productName:p.name,seller:el('saleSeller').value.trim(),amount,commission,paid:false,note:el('saleNote').value.trim(),date:new Date().toLocaleDateString('pt-PT')});
+   save();e.target.reset();render();alert(`Venda registada. Comissão de 5%: ${fmt(commission)}. Confirma o pagamento antes de marcar como paga.`);
+ });
+ el('exportBtn').addEventListener('click',()=>{
+   const rows=[['Tipo','Data','Produto','Vendedor','Valor Kz','Comissão Kz','Estado','Observação']];
+   state.products.forEach(p=>rows.push(['Anúncio',p.created||'',p.name,p.seller,p.price,'',p.status,p.location]));
+   state.sales.forEach(s=>rows.push(['Venda',s.date,s.productName,s.seller,s.amount,s.commission,s.paid?'Comissão paga':'Comissão por receber',s.note||'']));
+   const csv='\ufeff'+rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\r\n');
+   const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'})),a=document.createElement('a');a.href=url;a.download='baza-angola-registos.csv';a.click();URL.revokeObjectURL(url);
+ });
+ el('resetBtn').addEventListener('click',()=>{if(confirm('Tens a certeza? Todos os anúncios e vendas guardados neste navegador serão apagados. Exporta primeiro os registos se precisares deles.')){state={products:[],sales:[]};save();render()}});
+ render();
+})();
+</script>
+</body>
+</html>
